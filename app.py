@@ -12,15 +12,6 @@ produtos = [
     {"id": 7, "Nome": "Óleo", "Preço": 7.9}
 ]
 
-@app.route('/')
-def home():
-    return "/Settings para documentação"
-
-@app.route('/Settings')
-def doc():
-    return render_template('index.html')
-
-
 # 🔹 Listar todos os produtos
 @app.route('/produtos', methods=['GET'])
 def listar_produtos():
